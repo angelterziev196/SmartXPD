@@ -1,0 +1,42 @@
+{
+  "name": "RubberDuck-HTML-Template",
+  "version": "0.0.1",
+  "description": "Setup for Gulp with ES6 & SCSS",
+  "author": "Rangel Rangelov (Rubber Duck)",
+  "license": "UNLICENSED",
+  "scripts": {
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "insert_url_here"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-airbnb": "^2.4.0",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "browser-sync": "^2.18.13",
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-eslint": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "keywords": [
+    "rubberduck",
+    "gulp",
+    "es6",
+    "sass",
+    "babel"
+  ],
+  "dependencies": {
+    "read-vinyl-file-stream": "^2.0.3",
+    "vinyl-paths": "^2.1.0",
+    "vinyl-read": "^1.0.0"
+  }
+}

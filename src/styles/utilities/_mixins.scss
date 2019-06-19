@@ -1,0 +1,30 @@
+//################################################
+// Sets font-size, line-height and color
+// Example: @include font(18px, 24px, $black);
+//################################################
+
+@mixin font($fontSize, $lineHeight, $fontColor) {
+  color: $fontColor;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+//################################################
+// Sets box-sizing for all browsers
+// Example: @include box-sizing(border-box);
+//################################################
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
+
+//################################################
+// Creates media query with the given parameters
+// Example: @include breakpoint(min,width,992px)
+//################################################
+
+@mixin breakpoint($type, $prop, $size) {
+  @media (#{$type}-#{$prop}: $size) { @content; }
+}

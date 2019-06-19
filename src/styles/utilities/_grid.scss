@@ -1,0 +1,41 @@
+.row {
+  @extend .clearfix;
+  width: 100%;
+  max-width: 1014px;
+  margin: 0 auto;
+}
+
+[class^='col'] {
+  float: left;
+  width: 100%;
+  padding: 0 $spacing;
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.67%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.3%; }
+.col-5 { width: 41.67%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.7%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.67%; }
+
+
+@each $breakpoint, $size in $breakpoints {
+  @include breakpoint(min,width,$size) {
+    .col-#{$breakpoint}-1 { width: 8.33%; }
+    .col-#{$breakpoint}-2 { width: 16.67%; }
+    .col-#{$breakpoint}-3 { width: 25%; }
+    .col-#{$breakpoint}-4 { width: 33.3%; }
+    .col-#{$breakpoint}-5 { width: 41.67%; }
+    .col-#{$breakpoint}-6 { width: 50%; }
+    .col-#{$breakpoint}-7 { width: 58.33%; }
+    .col-#{$breakpoint}-8 { width: 66.7%; }
+    .col-#{$breakpoint}-9 { width: 75%; }
+    .col-#{$breakpoint}-10 { width: 83.33%; }
+    .col-#{$breakpoint}-11 { width: 91.67%; }
+  }
+}

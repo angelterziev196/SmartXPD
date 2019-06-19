@@ -1,0 +1,10 @@
+input, input[type='text'], input[type='email'],
+input[type='search'], input[type='number'],
+input[type='password'] {
+  width: 100%;
+  background: $white;
+  color: $black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $black;
+}
